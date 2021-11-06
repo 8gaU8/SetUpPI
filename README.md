@@ -5,7 +5,7 @@ SetUp BASH Script for Raspberry Pi
 Download and see `setup.sh`, and exec it.
 
 ```bash
-curl -sSL https://git.io/JPhYJ | tee setup.sh | more
+curl -sSL https://git.io/JPhYJ | tee setup.sh | less
 chmod +x ./setup.sh
 ./setup.sh
 ```
