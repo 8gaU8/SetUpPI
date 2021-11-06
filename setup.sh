@@ -3,7 +3,7 @@ set -euxo pipefail
 cd "$(dirname "$0")"
 
 sudo apt update && sudo apt upgrade
-sudo apt apt install \
+sudo apt install \
     git \
     vim \
     jq
@@ -32,7 +32,7 @@ sudo apt install \
 
 command echo 'export LD_PRELOAD=/usr/lib/arm-linux-gnueabihf/libatomic.so.1' >>~/.bashrc
 
-/usr/bin/python3 -m pip install -U
+/usr/bin/python3 -m pip install -U pip
 /usr/bin/python3 -m pip install \
     black \
     isort \
