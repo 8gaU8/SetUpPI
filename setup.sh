@@ -46,6 +46,8 @@ command echo 'COPY PUB KEY TO ~/.ssh/authorized_keys'
 
 
 # set ~/.vimrc
+curl -sSL https://raw.githubusercontent.com/straxFromIbr/SetUpPI/main/vimrc > ./vimrc
 if ! test -e ~/.vimrc; then
     command mv ./vimrc ~/.vimrc
 fi
+command rm ./vimrc
