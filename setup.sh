@@ -43,3 +43,9 @@ command mkdir ~/.ssh
 command touch ~/.ssh/authorized_keys
 command chmod 700 ~/.ssh
 command echo 'COPY PUB KEY TO ~/.ssh/authorized_keys'
+
+
+# set ~/.vimrc
+if ! test -e ~/.vimrc; then
+    command mv ./vimrc ~/.vimrc
+fi
